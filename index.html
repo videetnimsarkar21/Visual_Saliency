@@ -1,1 +1,36 @@
-<h2>Visual Saliency</h2>
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.1.2"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    Visual Saliency
+	<br>Videet Nimsarkar </br>
+	MTP under the guidance of Dr. Balagopal G Menon
+  </header>
+
+  <div id="error">
+    no camera was found
+  </div>
+
+  <div id="videos">
+    <video autoplay playsinline muted id="webcam"></video>
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <form class="toggle">
+    <input id="very_low" name="states" type="radio" checked="">
+    <label for="very_low" onclick="">SalGAN</label>
+
+    <input id="low" name="states" type="radio">
+    <label for="low" onclick="">SalNET</label>
+
+  </form>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
